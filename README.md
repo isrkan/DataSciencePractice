@@ -1,4 +1,4 @@
-# Models
+# Data science and analysis exploration
 
 This repository contains Jupyter Notebook files for self-learning various statistical, econometric and machine learning techniques using different datasets. The notebooks cover for now the topics:
 
