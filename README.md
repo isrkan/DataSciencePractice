@@ -2,7 +2,7 @@
 
 This repository contains Jupyter Notebook files for self-learning various statistical, econometric and machine learning techniques using different datasets. The notebooks cover for now the topics:
 
-- Supervised learning
+- Computer vision
 - Natural language processing
 - Time series analysis
 
