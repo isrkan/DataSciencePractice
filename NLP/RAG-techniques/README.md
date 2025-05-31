@@ -28,6 +28,13 @@ This directory contains my practical implementations of various retrieval-augmen
 ### Explainability and Transparency
 - **Explainable retrieval**: Implementation of a retrieval system that not only finds relevant documents but also generates natural language explanations for why those documents were selected, making the process more transparent and trustworthy.
 
+### **Iterative techniques**
+* **RAG system with feedback loop**: Integrate user feedback to dynamically refine document relevance and improve answer quality over time — ideal for adaptive systems like education or support bots.
+* **Adaptive RAG system**: Automatically classify query types (e.g., factual, opinion, contextual) and choose the most suitable retrieval strategy using LLMs.
+
+### **Evaluation**
+* **Evaluating RAG systems with DeepEval**: Use the `deepeval` library to assess RAG performance on correctness, contextual faithfulness, and relevance — moving beyond surface-level accuracy.
+
 
 ## Acknowledgements
 This work is inspired by and builds upon techniques demonstrated in the excellent [RAG Techniques Repository](https://github.com/NirDiamant/RAG_Techniques) of Nir Diamant. I have implemented these techniques as part of my learning journey to deepen my understanding of RAG systems and organize the concepts in a structured way.
