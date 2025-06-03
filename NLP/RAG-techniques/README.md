@@ -32,6 +32,7 @@ This directory contains my practical implementations of various retrieval-augmen
 * **RAG system with feedback loop**: Integrate user feedback to dynamically refine document relevance and improve answer quality over time — ideal for adaptive systems like education or support bots.
 * **Adaptive RAG system**: Automatically classify query types (e.g., factual, opinion, contextual) and choose the most suitable retrieval strategy using LLMs.
 * **Self-RAG system with internal reasoning**: Implements a multi-step, decision-aware RAG pipeline with internal checkpoints: it decides whether to retrieve, filters irrelevant contexts, assesses the factual support of generated responses, and scores their utility before choosing the best answer — a lightweight alternative to agentic frameworks.
+* **Corrective RAG**: A fallback-aware RAG pipeline that evaluates the relevance of retrieved documents. If confidence is low, it rewrites the query, performs a web search, refines the results into structured knowledge, and uses that to answer. Useful when internal sources are weak or incomplete.
 
 ### **Evaluation**
 * **Evaluating RAG systems with DeepEval**: Use the `deepeval` library to assess RAG performance on correctness, contextual faithfulness, and relevance — moving beyond surface-level accuracy.
