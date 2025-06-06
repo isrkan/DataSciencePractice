@@ -34,6 +34,9 @@ This directory contains my practical implementations of various retrieval-augmen
 * **Self-RAG system with internal reasoning**: Implements a multi-step, decision-aware RAG pipeline with internal checkpoints: it decides whether to retrieve, filters irrelevant contexts, assesses the factual support of generated responses, and scores their utility before choosing the best answer — a lightweight alternative to agentic frameworks.
 * **Corrective RAG**: A fallback-aware RAG pipeline that evaluates the relevance of retrieved documents. If confidence is low, it rewrites the query, performs a web search, refines the results into structured knowledge, and uses that to answer. Useful when internal sources are weak or incomplete.
 
+### **Structured retrieval**
+* **Hierarchical retrieval with RAPTOR**: Build a multi-level retrieval system that summarizes and indexes documents across semantic layers. Queries begin at the top of the hierarchy and drill down through relevant summaries to surface the most contextually aligned chunks — ideal for long or complex document collections.
+
 ### **Evaluation**
 * **Evaluating RAG systems with DeepEval**: Use the `deepeval` library to assess RAG performance on correctness, contextual faithfulness, and relevance — moving beyond surface-level accuracy.
 
