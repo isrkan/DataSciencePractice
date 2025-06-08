@@ -36,6 +36,7 @@ This directory contains my practical implementations of various retrieval-augmen
 
 ### **Structured retrieval**
 * **Hierarchical retrieval with RAPTOR**: Build a multi-level retrieval system that summarizes and indexes documents across semantic layers. Queries begin at the top of the hierarchy and drill down through relevant summaries to surface the most contextually aligned chunks — ideal for long or complex document collections.
+* **Graph-based RAG**: Construct a knowledge graph from documents using LLM-extracted concepts and relationships. This structured graph enables reasoning over interconnected ideas, enriching the retrieval process with path-based context discovery and concept explainability — ideal for domains that benefit from semantic structure.
 
 ### **Evaluation**
 * **Evaluating RAG systems with DeepEval**: Use the `deepeval` library to assess RAG performance on correctness, contextual faithfulness, and relevance — moving beyond surface-level accuracy.
