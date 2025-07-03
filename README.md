@@ -31,7 +31,7 @@ Practice notebooks focused on mastering key Python libraries used in data scienc
 - Deep learning: PyTorch, TensorFlow
 - Machine learning and statistical modeling: scikit-learn, statsmodels
 - Scientific computing: NumPy, SciPy
-
+- Data processing: Pandas, Polars
 
 ## Purpose
 This repository is constantly updated with new notebooks and techniques, so feel free to check back frequently for new content.
