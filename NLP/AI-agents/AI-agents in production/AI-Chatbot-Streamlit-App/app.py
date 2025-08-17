@@ -1,5 +1,4 @@
 import streamlit as st
-import io
 import os
 from dotenv import load_dotenv
 import openai
@@ -9,7 +8,7 @@ import PyPDF2
 # CONFIGURATION & SETUP
 # =============================================================================
 
-# Load environment variables
+# Load environment variables (for OpenAI API key)
 load_dotenv()
 
 # Initialize OpenAI client
@@ -24,7 +23,7 @@ st.set_page_config(
 
 
 # =============================================================================
-# UTILITY FUNCTIONS
+# FILE HANDLING FUNCTIONS
 # =============================================================================
 
 def extract_text_from_pdf(pdf_file):
@@ -64,6 +63,10 @@ def process_uploaded_file(uploaded_file):
     else:
         return "Unsupported file type. Please upload a TXT or PDF file."
 
+
+# -----------------------------------------------------------------------------
+# OPENAI FUNCTIONS
+# -----------------------------------------------------------------------------
 
 def generate_response(user_prompt, file_content=None):
     """
@@ -113,6 +116,10 @@ def summarize_text(text):
     summary_prompt = f"Summarize the following text:\n\n{text[:3000]}"
     return generate_response(summary_prompt)
 
+
+# -----------------------------------------------------------------------------
+# CHAT UTILITIES
+# -----------------------------------------------------------------------------
 
 def download_chat(messages):
     """
@@ -175,7 +182,9 @@ def render_sidebar():
             st.sidebar.subheader("📌 File Summary")
             st.sidebar.write(summary)
 
+    # -------------------------
     # Chat controls
+    # -------------------------
     st.sidebar.divider()
     st.sidebar.subheader("💬 Chat Controls")
 
